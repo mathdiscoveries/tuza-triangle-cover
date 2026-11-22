@@ -12,11 +12,11 @@ project:
     unmerged colored-family covers, and opposite-edge elimination, together with
     non-vacuity checks nu(K_4) = 1 and tau(K_4) = 2.
   authors:
-    - "Tyler Hughes"
+    - "Tyler B. Hughes"
     - "Sichen Wang"
   license: "MIT"
   responsible_maintainers:
-    - "Tyler Hughes"
+    - "Tyler B. Hughes"
 
 classification:
   arxiv: ["math.CO"]
@@ -30,7 +30,7 @@ sources:
       Helper-arborescence coupling, unmerged colored-family covers, and
       opposite-edge elimination yielding 29 * tau(G) <= 81 * nu(G) for every
       finite simple graph G, discovered and formalized by AI research agents
-      built and directed by Tyler Hughes extending Sichen Wang's MIT-licensed
+      built and directed by Tyler B. Hughes extending Sichen Wang's MIT-licensed
       tuza-lean repository.
   - title: "An improved upper bound for Tuza's conjecture"
     authors:
@@ -81,7 +81,7 @@ automation:
   methods:
     - method: agent
       models: []
-      framework: "AI research agent pipeline built and directed by Tyler Hughes"
+      framework: "AI research agent pipeline built and directed by Tyler B. Hughes"
       tool_setup: >-
         Autonomous builder, adversarial falsifier, and reviewer agents
         discovered the new cover inequalities and formalized them in Lean 4 +
@@ -95,7 +95,7 @@ automation:
   notes: >-
     The new inequalities and their Lean 4 formalization extending
     sichen-wang/tuza-lean were produced by AI research agents built and directed
-    by Tyler Hughes. No human mathematician has yet refereed the proof.
+    by Tyler B. Hughes. No human mathematician has yet refereed the proof.
 
 fidelity:
   divergences: ""
