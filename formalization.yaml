@@ -1,0 +1,141 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+
+project:
+  name: "Universal 81/29 Bound for Tuza's Triangle-Cover Conjecture"
+  description: >-
+    Unconditional Lean 4 + Mathlib formalization proving 29 * tau(G) <= 81 * nu(G)
+    (tau(G) <= (81 / 29) * nu(G) ~= 2.793103 * nu(G)) for every finite simple graph G,
+    where nu(G) is the triangle packing number and tau(G) is the triangle transversal
+    number, strictly improving Sichen Wang's 165/59 bound (arXiv:2609.13831). Extends
+    Wang's MIT-licensed sichen-wang/tuza-lean library with helper-arborescence coupling,
+    unmerged colored-family covers, and opposite-edge elimination, together with
+    non-vacuity checks nu(K_4) = 1 and tau(K_4) = 2.
+  authors:
+    - "Tyler Hughes"
+    - "Sichen Wang"
+  license: "MIT"
+  responsible_maintainers:
+    - "Tyler Hughes"
+
+classification:
+  arxiv: ["math.CO"]
+  msc2020: ["05C35", "05C70"]
+
+sources:
+  - title: "An 81/29 universal upper bound for Tuza's triangle-cover conjecture"
+    type: original-proof
+    relationship: other
+    note: >-
+      Helper-arborescence coupling, unmerged colored-family covers, and
+      opposite-edge elimination yielding 29 * tau(G) <= 81 * nu(G) for every
+      finite simple graph G, discovered and formalized by AI research agents
+      built and directed by Tyler Hughes extending Sichen Wang's MIT-licensed
+      tuza-lean repository.
+  - title: "An improved upper bound for Tuza's conjecture"
+    authors:
+      - "Sichen Wang"
+    id: "https://arxiv.org/abs/2609.13831"
+    type: paper
+    location: "arXiv:2609.13831 (2026)"
+    relationship: background
+    note: >-
+      Proves tau(G) <= (165 / 59) * nu(G) and releases the MIT-licensed Lean 4
+      formalization sichen-wang/tuza-lean that this repository directly extends.
+  - title: "Packing and covering triangles in graphs"
+    authors:
+      - "Penny E. Haxell"
+    id: "https://doi.org/10.1016/S0012-365X(98)00379-3"
+    type: paper
+    location: "Discrete Mathematics 195 (1999), 251-254"
+    relationship: background
+    note: "Establishes the classical universal bound tau(G) <= (66 / 23) * nu(G)."
+  - title: "A conjecture on triangles of graphs"
+    authors:
+      - "Zsolt Tuza"
+    type: paper
+    location: "Graphs and Combinatorics 6 (1990), 373-380"
+    relationship: background
+    note: "Poses Tuza's conjecture tau(G) <= 2 * nu(G)."
+
+related_formalizations:
+  - url: "https://github.com/sichen-wang/tuza-lean"
+    relationship: extends
+    note: "Upstream MIT-licensed Lean 4 formalization of tau(G) <= (165 / 59) * nu(G)."
+
+status:
+  scope: >-
+    Unconditionally proved in Lean 4 + Mathlib with standard axioms only (zero
+    sorry, zero native_decide): 29 * tau(G) <= 81 * nu(G), the rational form
+    tau(G) <= (81 / 29) * nu(G), the explicit transversal witness
+    exists_small_triangle_transversal_81_29, and non-vacuity on K_4
+    (nu(K_4) = 1, tau(K_4) = 2), for every finite simple graph G. Companion
+    finite-graph experiments and the 32-vertex gadget in the accompanying
+    manuscript are verified separately in exact rational Python and are not
+    required for the 81/29 theorem.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: ["propext", "Quot.sound", "Classical.choice"]
+
+automation:
+  methods:
+    - method: agent
+      models: []
+      framework: "AI research agent pipeline built and directed by Tyler Hughes"
+      tool_setup: >-
+        Autonomous builder, adversarial falsifier, and reviewer agents
+        discovered the new cover inequalities and formalized them in Lean 4 +
+        Mathlib on top of Sichen Wang's MIT-licensed tuza-lean library.
+      cost:
+        wall_time: "not tracked"
+        spend_usd: "not tracked"
+        hardware: "local machine"
+      prompting_notes: "Goal-directed mathematical discovery and Lean 4 formalization."
+  spend_usd: "not tracked"
+  notes: >-
+    The new inequalities and their Lean 4 formalization extending
+    sichen-wang/tuza-lean were produced by AI research agents built and directed
+    by Tyler Hughes. No human mathematician has yet refereed the proof.
+
+fidelity:
+  divergences: ""
+
+review:
+  status: agent-reviewed
+  reviewers:
+    - "Internal adversarial falsifier and reviewer agents"
+  notes: >-
+    Checked by separate internal falsifier and reviewer agents and audited for
+    standard axioms only via TuzaBound/Verify.lean. Not yet refereed by a human
+    mathematician.
+
+alignment:
+  namespace: "TuzaChallenge"
+  statements:
+    - source: "Universal 81/29 bound (natural-number form)"
+      lean: "TuzaChallenge.tuza_bound_81_29_nat"
+      module: "Challenge"
+      status: proved
+      note: "Unconditional 29 * tau(G) <= 81 * nu(G) for every finite simple graph G."
+    - source: "Universal 81/29 bound (rational form)"
+      lean: "TuzaChallenge.tuza_bound_81_29"
+      module: "Challenge"
+      status: proved
+      note: "Unconditional tau(G) <= (81 / 29) * nu(G) over Q."
+    - source: "Explicit edge-transversal witness"
+      lean: "TuzaChallenge.exists_small_triangle_transversal_81_29"
+      module: "Challenge"
+      status: proved
+      note: "Explicit edge subset C <= E(G) hitting every triangle with 29 * |C| <= 81 * nu(G)."
+    - source: "Non-vacuity on K_4 (packing number)"
+      lean: "TuzaChallenge.nu_complete4"
+      module: "Challenge"
+      status: proved
+      note: "Verifies nu(K_4) = 1."
+    - source: "Non-vacuity on K_4 (transversal number)"
+      lean: "TuzaChallenge.tau_complete4"
+      module: "Challenge"
+      status: proved
+      note: "Verifies tau(K_4) = 2."
+
+acknowledgements: "Extends Sichen Wang's MIT-licensed sichen-wang/tuza-lean on Lean 4 and Mathlib."

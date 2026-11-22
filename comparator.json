@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "TuzaChallenge.tuza_bound_81_29_nat",
+    "TuzaChallenge.tuza_bound_81_29",
+    "TuzaChallenge.exists_small_triangle_transversal_81_29",
+    "TuzaChallenge.nu_complete4",
+    "TuzaChallenge.tau_complete4"
+  ],
+  "definition_names": [],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}
