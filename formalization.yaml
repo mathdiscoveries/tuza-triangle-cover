@@ -59,8 +59,8 @@ sources:
     note: "Poses Tuza's conjecture tau(G) <= 2 * nu(G)."
 
 related_formalizations:
-  - url: "https://github.com/sichen-wang/tuza-lean"
-    relationship: extends
+  - id: "https://github.com/sichen-wang/tuza-lean"
+    relationship: builds-on
     note: "Upstream MIT-licensed Lean 4 formalization of tau(G) <= (165 / 59) * nu(G)."
 
 status:
