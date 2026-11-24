@@ -1,5 +1,7 @@
 # Universal `81 / 29` Bound for Tuza's Triangle-Cover Conjecture
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24490771.svg)](https://doi.org/10.5281/zenodo.24490771)
+
 Unconditional Lean 4 (`v4.35.0`) + Mathlib formalization proving
 
 $$29\,\tau(G) \le 81\,\nu(G) \qquad \left(\tau(G) \le \frac{81}{29}\,\nu(G) \approx 2.793103\,\nu(G)\right)$$

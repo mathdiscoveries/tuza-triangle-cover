@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+type: software
+message: "If you use or cite this Lean 4 formalization, please cite it using the Zenodo DOI below."
+title: "Universal 81/29 Bound for Tuza's Triangle-Cover Conjecture"
+authors:
+  - family-names: "Hughes"
+    given-names: "Tyler B."
+    orcid: "https://orcid.org/0000-0001-6221-9014"
+doi: "10.5281/zenodo.24490771"
+version: "v1.0.0"
+date-released: "2026-11-24"
+license: "MIT"
+repository-code: "https://github.com/mathdiscoveries/tuza-triangle-cover"
+url: "https://mathdiscoveries.org/results/tuza-triangle-cover"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24490772"
+    description: "Version v1.0.0 snapshot archived on Zenodo"
