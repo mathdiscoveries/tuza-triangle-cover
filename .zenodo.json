@@ -1,0 +1,41 @@
+{
+  "creators": [
+    {
+      "name": "Hughes, Tyler B.",
+      "orcid": "0000-0001-6221-9014"
+    }
+  ],
+  "title": "Universal 81/29 Bound for Tuza's Triangle-Cover Conjecture",
+  "description": "Unconditional Lean 4 + Mathlib formalization proving 29 * tau(G) <= 81 * nu(G) (tau(G) <= (81 / 29) * nu(G) ~= 2.793103 * nu(G)) for every finite simple graph G, where nu(G) is the triangle packing number and tau(G) is the triangle transversal number, strictly improving Sichen Wang's 165/59 bound (arXiv:2609.13831). Main theorem: 1 of 1 in Lean (100%); companion 32-vertex gadget checked separately in exact rational Python. Extends Wang's MIT-licensed sichen-wang/tuza-lean library with helper-arborescence coupling, unmerged colored-family covers, and opposite-edge elimination, together with non-vacuity checks nu(K_4) = 1 and tau(K_4) = 2. Generated and checked by AI research agents built and directed by Tyler B. Hughes. No human mathematician has yet refereed the proof.",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "mit",
+  "language": "eng",
+  "keywords": [
+    "Lean 4",
+    "formalized mathematics",
+    "theorem proving",
+    "combinatorics",
+    "math.CO",
+    "MSC 2020: 05C35",
+    "MSC 2020: 05C70"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://mathdiscoveries.org/results/tuza-triangle-cover",
+      "relation": "isSupplementTo",
+      "resource_type": "other"
+    },
+    {
+      "identifier": "https://arxiv.org/abs/2609.13831",
+      "relation": "references",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://doi.org/10.1016/S0012-365X(98)00379-3",
+      "relation": "references",
+      "resource_type": "publication-article"
+    }
+  ],
+  "notes": "Unrefereed. Generated and checked by AI research agents built and directed by Tyler B. Hughes."
+}
