@@ -10,10 +10,12 @@ for every finite simple graph $G$, where $\nu(G)$ is the maximum number of
 pairwise edge-disjoint triangles in $G$ and $\tau(G)$ is the minimum number of
 edges meeting every triangle in $G$.
 
-This repository extends Sichen Wang's MIT-licensed
+The Lean code extends Sichen Wang's MIT-licensed
 [`sichen-wang/tuza-lean`](https://github.com/sichen-wang/tuza-lean)
-($\frac{165}{59}\nu(G)$, `arXiv:2609.13831`) with helper-arborescence coupling,
-unmerged colored-family covers, and opposite-edge elimination.
+($\frac{165}{59}\nu(G)$, `arXiv:2609.13831`) and formalizes the
+helper-arborescence coupling, unmerged colored-family covers, and opposite-edge
+elimination of the companion paper,
+[An 81/29 Upper Bound for Tuza's Conjecture via Helper Arborescences and Opposite-Edge Elimination](https://mathdiscoveries.org/results/tuza-triangle-cover).
 
 ## Compared Theorems (`Challenge.lean` / `comparator.json`)
 

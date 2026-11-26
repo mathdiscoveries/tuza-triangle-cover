@@ -4,14 +4,16 @@ version: "v0.4"
 project:
   name: "Universal 81/29 Bound for Tuza's Triangle-Cover Conjecture"
   description: >-
-    Unconditional Lean 4 + Mathlib formalization proving 29 * tau(G) <= 81 * nu(G)
-    (tau(G) <= (81 / 29) * nu(G) ~= 2.793103 * nu(G)) for every finite simple graph G,
-    where nu(G) is the triangle packing number and tau(G) is the triangle transversal
-    number, strictly improving Sichen Wang's 165/59 bound (arXiv:2609.13831). Main
+    Unconditional Lean 4 + Mathlib formalization of the companion paper's proof that
+    29 * tau(G) <= 81 * nu(G) (tau(G) <= (81 / 29) * nu(G) ~= 2.793103 * nu(G)) for
+    every finite simple graph G, where nu(G) is the triangle packing number and tau(G)
+    is the triangle transversal number; 81/29 is below Sichen Wang's 165/59 bound
+    (arXiv:2609.13831). Main
     theorem: 1 of 1 in Lean (100%); companion 32-vertex gadget checked separately in
-    exact rational Python. Extends Wang's MIT-licensed sichen-wang/tuza-lean library
-    with helper-arborescence coupling, unmerged colored-family covers, and
-    opposite-edge elimination, together with non-vacuity checks nu(K_4) = 1 and
+    exact rational Python. The Lean code extends Wang's MIT-licensed
+    sichen-wang/tuza-lean library with the paper's helper-arborescence coupling,
+    unmerged colored-family covers, and opposite-edge elimination, together with
+    non-vacuity checks nu(K_4) = 1 and
     tau(K_4) = 2.
   authors:
     - "Tyler B. Hughes"
@@ -24,25 +26,51 @@ classification:
   msc2020: ["05C35", "05C70"]
 
 sources:
-  - title: "An 81/29 universal upper bound for Tuza's triangle-cover conjecture"
-    type: original-proof
-    relationship: other
+  - title: "An 81/29 Upper Bound for Tuza's Conjecture via Helper Arborescences and Opposite-Edge Elimination"
+    authors:
+      - "Tyler B. Hughes"
+    id: "https://mathdiscoveries.org/results/tuza-triangle-cover"
+    type: paper
+    location: "https://mathdiscoveries.org/results/tuza-triangle-cover"
+    relationship: formalizes
+    author_endorsement: participated
     note: >-
-      Helper-arborescence coupling, unmerged colored-family covers, and
-      opposite-edge elimination yielding 29 * tau(G) <= 81 * nu(G) for every
-      finite simple graph G, discovered and formalized by AI research agents
-      built and directed by Tyler B. Hughes extending Sichen Wang's MIT-licensed
-      tuza-lean repository.
-  - title: "An improved upper bound for Tuza's conjecture"
+      The companion paper. It states and proves in writing every compared
+      statement of this package (Theorem 2 with its rational form and explicit
+      transversal, and the K_4 values nu = 1 and tau = 2 of Section 1), and the
+      Lean work formalizes them; the formalization presents no result that the
+      paper does not. Its proof extends the 165/59 argument of Sichen Wang with
+      helper-arborescence coupling, unmerged colored-family covers and
+      opposite-edge elimination, and the Lean code extends Wang's MIT-licensed
+      sichen-wang/tuza-lean (see the entry for Wang's paper). The strict bound
+      of Corollary 3 and the 32-vertex gadget are not formalized here. AI
+      research agents built and directed by Tyler B. Hughes generated and
+      checked this work. No human mathematician has yet refereed the proof.
+  - title: "A bound below 2.8 for Tuza's conjecture"
     authors:
       - "Sichen Wang"
     id: "https://arxiv.org/abs/2609.13831"
     type: paper
     location: "arXiv:2609.13831 (2026)"
+    relationship: adapts
+    note: >-
+      Read (per the companion paper). Proves tau(G) <= (165 / 59) * nu(G) and releases the
+      MIT-licensed Lean 4 formalization sichen-wang/tuza-lean. The bound
+      formalized here changes and extends this result: the companion paper
+      keeps Wang's four-cover architecture, book lemma and Lemma 2.3 covers
+      and adds helper-arborescence coupling and opposite-edge elimination to
+      reach 81/29, and the Lean code extends Wang's library, keeping its
+      license.
+  - title: "An improved upper bound for Tuza's conjecture via 2-colorable triangle families"
+    authors:
+      - "L. Yi"
+    id: "https://arxiv.org/abs/2608.23010"
+    type: paper
+    location: "arXiv:2608.23010 (2026)"
     relationship: background
     note: >-
-      Proves tau(G) <= (165 / 59) * nu(G) and releases the MIT-licensed Lean 4
-      formalization sichen-wang/tuza-lean that this repository directly extends.
+      Read (per the companion paper). Proves tau(G) <= (63 / 22) * nu(G) and identifies 54/19 as
+      the barrier of Haxell's four-inequality system.
   - title: "Packing and covering triangles in graphs"
     authors:
       - "Penny E. Haxell"
@@ -50,7 +78,7 @@ sources:
     type: paper
     location: "Discrete Mathematics 195 (1999), 251-254"
     relationship: background
-    note: "Establishes the classical universal bound tau(G) <= (66 / 23) * nu(G)."
+    note: "Establishes the classical universal bound tau(G) <= (66 / 23) * nu(G). Publisher abstract and record checked; the full text is unread [to check]."
   - title: "A conjecture on triangles of graphs"
     authors:
       - "Zsolt Tuza"
