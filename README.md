@@ -28,6 +28,10 @@ elimination of the companion paper,
 All proofs use only Lean's three standard axioms (`propext`, `Quot.sound`,
 `Classical.choice`), with zero `sorry` and zero `native_decide`.
 
+Coverage by this package's Palomar comparison: of the companion paper's 10 main results, 1 is compared in Lean in full (10%; Theorem 2, in the three forms above). Theorem 4 and Proposition 8 are proved in this package's Lean library but not compared; Theorems 5, 6 and 7 and Propositions 9 and 10, which the paper reports as checked in its own Lean library, are not in this package; Proposition 11 (the 32-vertex gadget) is by certificate only, checked in exact rational Python; Corollary 3 is by written proof only; Conjecture 1 (Tuza's conjecture) is open and not counted. Abstract claims: 1 of 9 compared in Lean (11%). The $K_4$ values are non-vacuity checks, not main results.
+
+AI research agents built and directed by Tyler B. Hughes generated and checked this work. No human mathematician has yet refereed the proof.
+
 ## Build & Verify
 
 ```bash
