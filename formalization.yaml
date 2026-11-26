@@ -46,7 +46,7 @@ sources:
   - title: "Packing and covering triangles in graphs"
     authors:
       - "Penny E. Haxell"
-    id: "https://doi.org/10.1016/S0012-365X(98)00379-3"
+    id: "https://doi.org/10.1016/S0012-365X(98)00183-6"
     type: paper
     location: "Discrete Mathematics 195 (1999), 251-254"
     relationship: background
