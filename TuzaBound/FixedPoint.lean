@@ -1,5 +1,5 @@
 /-
-Copyright (c) 2026 Sichen Wang. All rights reserved.
+Copyright (c) 2026 Tyler B. Hughes. All rights reserved.
 Released under MIT license as described in the file LICENSE.
 Infinite-depth LP fixed-point recurrence (Theorem 2(a)) for `TuzaBound`.
 -/
