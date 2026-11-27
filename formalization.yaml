@@ -11,10 +11,9 @@ project:
     (arXiv:2609.13831). Coverage by this package's Palomar comparison: of
     the companion paper's 10 main results, 1 is compared in Lean in full (10%;
     Theorem 2, in natural-number, rational and explicit-transversal forms);
-    Theorem 4 and Proposition 8 are proved in this package's Lean library but
-    not compared; Theorems 5, 6 and 7 and Propositions 9 and 10, which the
-    paper reports as checked in its own Lean library, are not in this
-    package; Proposition 11 (the 32-vertex gadget) is by certificate only,
+    Theorems 4, 5, 6 and 7 and Propositions 8, 9 and 10 are proved in this
+    package's Lean library but not compared; Proposition 11 (the 32-vertex
+    gadget) is by certificate only,
     checked in exact rational Python; Corollary 3 is by written proof only;
     Conjecture 1 (Tuza's conjecture) is open and not counted. Abstract
     claims: 1 of 9 compared in Lean (11%). The Lean code extends Wang's MIT-licensed
@@ -50,10 +49,10 @@ sources:
       helper-arborescence coupling, unmerged colored-family covers and
       opposite-edge elimination, and the Lean code extends Wang's MIT-licensed
       sichen-wang/tuza-lean (see the entry for Wang's paper). Of the paper's
-      other main results, Theorem 4 and Proposition 8 are proved in this
-      package's Lean library but not compared, and Corollary 3, Theorems 5 to
-      7, Propositions 9 and 10 and the 32-vertex gadget (Proposition 11) are
-      not formalized in this package. AI
+      other main results, Theorems 4 to 7 and Propositions 8 to 10 are
+      proved in this package's Lean library but not compared, and Corollary 3
+      and the 32-vertex gadget (Proposition 11) are not formalized in this
+      package. AI
       research agents built and directed by Tyler B. Hughes generated and
       checked this work. No human mathematician has yet refereed the proof.
   - title: "A bound below 2.8 for Tuza's conjecture"
