@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 type: software
-message: "If you use or cite this Lean 4 formalization, please cite it using the Zenodo DOI below."
+message: "If you use or cite this Lean 4 formalization, please cite it using the Zenodo DOI below. AI research agents built and directed by Tyler B. Hughes generated and checked this work. No human mathematician has yet refereed the proof."
 title: "Universal 81/29 Bound for Tuza's Triangle-Cover Conjecture"
 authors:
   - family-names: "Hughes"
