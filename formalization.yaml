@@ -23,7 +23,7 @@ project:
     tau(K_4) = 2.
   authors:
     - "Tyler B. Hughes"
-  license: "MIT"
+  license: "Apache-2.0"
   responsible_maintainers:
     - "Tyler B. Hughes"
 
@@ -68,8 +68,9 @@ sources:
       formalized here changes and extends this result: the companion paper
       keeps Wang's four-cover architecture, book lemma and Lemma 2.3 covers
       and adds helper-arborescence coupling and opposite-edge elimination to
-      reach 81/29, and the Lean code extends Wang's library, keeping its
-      license.
+      reach 81/29, and the Lean code extends Wang's library. The package is
+      released under Apache 2.0; Wang's portions remain under his MIT
+      license, whose notice LICENSE reproduces.
   - title: "An improved upper bound for Tuza's conjecture via 2-colorable triangle families"
     authors:
       - "L. Yi"

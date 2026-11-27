@@ -1,6 +1,6 @@
 /-
 Copyright (c) 2026 Tyler B. Hughes. All rights reserved.
-Released under MIT license as described in the file LICENSE.
+Released under Apache 2.0 license as described in the file LICENSE.
 Complete opposite-edge elimination in C^(5) (Theorem 1.1, inequality (5'')) for `TuzaBound`.
 -/
 module

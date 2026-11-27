@@ -9,7 +9,7 @@ authors:
 doi: "10.5281/zenodo.24490771"
 version: "v1.0.0"
 date-released: "2026-11-24"
-license: "MIT"
+license: "Apache-2.0"
 repository-code: "https://github.com/mathdiscoveries/tuza-triangle-cover"
 url: "https://mathdiscoveries.org/results/tuza-triangle-cover"
 identifiers:

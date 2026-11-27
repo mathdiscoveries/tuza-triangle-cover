@@ -32,6 +32,12 @@ Coverage by this package's Palomar comparison: of the companion paper's 10 main 
 
 AI research agents built and directed by Tyler B. Hughes generated and checked this work. No human mathematician has yet refereed the proof.
 
+## License
+
+Apache 2.0 (see `LICENSE`). The files whose header names Sichen Wang are
+derived from his MIT-licensed `sichen-wang/tuza-lean`; his MIT notice is
+reproduced in `LICENSE` and his copyright lines are kept in each file.
+
 ## Build & Verify
 
 ```bash
