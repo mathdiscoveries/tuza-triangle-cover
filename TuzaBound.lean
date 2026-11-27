@@ -7,3 +7,4 @@ module
 
 public import TuzaBound.Main
 public import TuzaBound.FixedPoint
+public import TuzaBound.ExtremalAndDuality

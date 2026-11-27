@@ -272,3 +272,117 @@ on Lean 4's three standard axioms (`propext`, `Classical.choice`, `Quot.sound`) 
 #print axioms TuzaBound.infinite_depth_lp_upper
 #print axioms TuzaBound.infinite_depth_lp_attained
 #print axioms TuzaBound.infinite_depth_lp_exact_699_250
+
+-- 8. Exact 81/29 LP Barrier, Primal & Dual Uniqueness, Conditional Slices, and Tightness Families (ExtremalAndDuality.lean)
+#check @TuzaBound.IsValidInfiniteHierarchyPoint8129
+#check @TuzaBound.primalP8129
+#check @TuzaBound.primalU8129
+#check @TuzaBound.infinite_depth_lp_81_29_upper_with_slack
+#check @TuzaBound.infinite_depth_lp_81_29_upper_with_d_slack
+#check @TuzaBound.infinite_depth_lp_81_29_upper
+#check @TuzaBound.bluePrefix_primalP8129_succ
+#check @TuzaBound.infinite_depth_lp_81_29_attained
+#check @TuzaBound.primal8129_satisfies_tuza_S
+#check @TuzaBound.infinite_depth_lp_81_29_exact
+#check @TuzaBound.infinite_depth_lp_81_29_primal_unique
+#check @TuzaBound.dual_certificate_81_29_unique
+#check @TuzaBound.Construction.full_book_cover_unrelaxed
+#check @TuzaBound.Construction.opposite_elimination_cover_unrelaxed
+#check @TuzaBound.Construction.transversalNumber_le_add_specialFamily_unrelaxed
+#check @TuzaBound.Construction.unmerged_cover_6a_unrelaxed
+#check @TuzaBound.Construction.unmerged_cover_6b_unrelaxed
+#check @TuzaBound.Construction.unmerged_cover_6c_unrelaxed
+#check @TuzaBound.Construction.second_card_le_typeTwo_card
+#check @TuzaBound.Construction.third_priv_card_le_third_card
+#check @TuzaBound.Construction.second_priv_card_le_second_card
+#check @TuzaBound.Construction.third_card_eq_zero_of_second_eq_zero
+#check @TuzaBound.Construction.bound_81_29_full_slack
+#check @TuzaBound.Construction.bound_81_29_with_d_slack
+#check @TuzaBound.Construction.bound_36_13_parametrized
+#check @TuzaBound.Construction.bound_zero_privPages
+#check @TuzaBound.Construction.bound_282_101_parametrized
+#check @TuzaBound.Construction.bound_zero_helperRoots
+#check @TuzaBound.Construction.bound_zero_typeOne
+#check @TuzaBound.Construction.bound_zero_second
+#check @TuzaBound.Construction.bound_zero_typeTwo
+#check @TuzaBound.Construction.bound_zero_typeOne_zero_privPages
+#check @TuzaBound.Construction.bound_zero_third_zero_privPages
+#check @TuzaBound.Construction.bound_zero_third_zero_helperRoots
+#check @TuzaBound.disjointCopy
+#check @TuzaBound.copyVertEmb
+#check @TuzaBound.copyEdgeEmb
+#check @TuzaBound.copyTriEmb
+#check @TuzaBound.copyEdgeEmb_apply
+#check @TuzaBound.copyTriEmb_apply
+#check @TuzaBound.copyEdgeEmb_disjoint
+#check @TuzaBound.copyTriEmb_triangleEdges
+#check @TuzaBound.copyTriEmb_mem_graphTriangles
+#check @TuzaBound.mem_graphTriangles_disjointCopy
+#check @TuzaBound.copyTriEmb_disjoint_of_ne
+#check @TuzaBound.nu_disjointCopy
+#check @TuzaBound.tau_disjointCopy
+#check @TuzaBound.disjointK4
+#check @TuzaBound.nu_disjointK4
+#check @TuzaBound.tau_disjointK4
+#check @TuzaBound.tuza_tight_disjointK4
+#check @TuzaBound.complete5_edge_card
+#check @TuzaBound.nu_complete5
+#check @TuzaBound.mantel_five
+#check @TuzaBound.tau_complete5
+#check @TuzaBound.tuza_tight_complete5
+#check @TuzaBound.disjointK5
+#check @TuzaBound.nu_disjointK5
+#check @TuzaBound.tau_disjointK5
+#check @TuzaBound.tuza_tight_disjointK5
+
+#print axioms TuzaBound.infinite_depth_lp_81_29_upper_with_slack
+#print axioms TuzaBound.infinite_depth_lp_81_29_upper_with_d_slack
+#print axioms TuzaBound.infinite_depth_lp_81_29_upper
+#print axioms TuzaBound.bluePrefix_primalP8129_succ
+#print axioms TuzaBound.infinite_depth_lp_81_29_attained
+#print axioms TuzaBound.primal8129_satisfies_tuza_S
+#print axioms TuzaBound.infinite_depth_lp_81_29_exact
+#print axioms TuzaBound.infinite_depth_lp_81_29_primal_unique
+#print axioms TuzaBound.dual_certificate_81_29_unique
+#print axioms TuzaBound.Construction.full_book_cover_unrelaxed
+#print axioms TuzaBound.Construction.opposite_elimination_cover_unrelaxed
+#print axioms TuzaBound.Construction.transversalNumber_le_add_specialFamily_unrelaxed
+#print axioms TuzaBound.Construction.unmerged_cover_6a_unrelaxed
+#print axioms TuzaBound.Construction.unmerged_cover_6b_unrelaxed
+#print axioms TuzaBound.Construction.unmerged_cover_6c_unrelaxed
+#print axioms TuzaBound.Construction.second_card_le_typeTwo_card
+#print axioms TuzaBound.Construction.third_priv_card_le_third_card
+#print axioms TuzaBound.Construction.second_priv_card_le_second_card
+#print axioms TuzaBound.Construction.third_card_eq_zero_of_second_eq_zero
+#print axioms TuzaBound.Construction.bound_81_29_full_slack
+#print axioms TuzaBound.Construction.bound_81_29_with_d_slack
+#print axioms TuzaBound.Construction.bound_36_13_parametrized
+#print axioms TuzaBound.Construction.bound_zero_privPages
+#print axioms TuzaBound.Construction.bound_282_101_parametrized
+#print axioms TuzaBound.Construction.bound_zero_helperRoots
+#print axioms TuzaBound.Construction.bound_zero_typeOne
+#print axioms TuzaBound.Construction.bound_zero_second
+#print axioms TuzaBound.Construction.bound_zero_typeTwo
+#print axioms TuzaBound.Construction.bound_zero_typeOne_zero_privPages
+#print axioms TuzaBound.Construction.bound_zero_third_zero_privPages
+#print axioms TuzaBound.Construction.bound_zero_third_zero_helperRoots
+#print axioms TuzaBound.copyEdgeEmb_apply
+#print axioms TuzaBound.copyTriEmb_apply
+#print axioms TuzaBound.copyEdgeEmb_disjoint
+#print axioms TuzaBound.copyTriEmb_triangleEdges
+#print axioms TuzaBound.copyTriEmb_mem_graphTriangles
+#print axioms TuzaBound.mem_graphTriangles_disjointCopy
+#print axioms TuzaBound.copyTriEmb_disjoint_of_ne
+#print axioms TuzaBound.nu_disjointCopy
+#print axioms TuzaBound.tau_disjointCopy
+#print axioms TuzaBound.nu_disjointK4
+#print axioms TuzaBound.tau_disjointK4
+#print axioms TuzaBound.tuza_tight_disjointK4
+#print axioms TuzaBound.complete5_edge_card
+#print axioms TuzaBound.nu_complete5
+#print axioms TuzaBound.mantel_five
+#print axioms TuzaBound.tau_complete5
+#print axioms TuzaBound.tuza_tight_complete5
+#print axioms TuzaBound.nu_disjointK5
+#print axioms TuzaBound.tau_disjointK5
+#print axioms TuzaBound.tuza_tight_disjointK5
