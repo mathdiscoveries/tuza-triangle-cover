@@ -32,15 +32,15 @@ def triangleEdges (u v w : V) : Finset (Sym2 V) :=
 def IsTriangle (T : Finset (Sym2 V)) : Prop :=
   ∃ u v w, u ≠ v ∧ u ≠ w ∧ v ≠ w ∧ T = triangleEdges u v w
 
+open Classical in
 /-- All triangles whose edges lie in `A`. -/
-noncomputable def trianglesOn (A : Finset (Sym2 V)) : Finset (Finset (Sym2 V)) := by
-  classical
-  exact univ.filter (fun T => IsTriangle T ∧ T ⊆ A)
+noncomputable def trianglesOn (A : Finset (Sym2 V)) : Finset (Finset (Sym2 V)) :=
+  univ.filter (fun T => IsTriangle T ∧ T ⊆ A)
 
+open Classical in
 /-- The edge set of a finite simple graph as a `Finset`. -/
-noncomputable def graphEdges (G : SimpleGraph V) : Finset (Sym2 V) := by
-  classical
-  exact G.edgeSet.toFinset
+noncomputable def graphEdges (G : SimpleGraph V) : Finset (Sym2 V) :=
+  G.edgeSet.toFinset
 
 /-- All triangles of a finite simple graph `G`. -/
 noncomputable def graphTriangles (G : SimpleGraph V) : Finset (Finset (Sym2 V)) :=
